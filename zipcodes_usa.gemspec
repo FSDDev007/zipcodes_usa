@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'zipcodes_usa/version'
@@ -9,23 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Varun Kothari']
   spec.email         = ['varun.kothari007@gmail.com']
 
-  spec.summary       = 'USA Zipcodes list where 5G Coverage is available.'
-  spec.description   = 'USA Zipcodes.'
-  spec.homepage      = 'http://rubygems.org/gems/zipcodes_usa'
+  spec.summary       = 'USA Zipcodes list'
+  spec.description   = 'USA Zipcodes list where 5G Coverage is available.'
+  spec.homepage      = 'http://tout.herokuapp.com'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    # spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['homepage_uri']    = 'http://tout.herokuapp.com'
+  spec.metadata['source_code_uri'] = 'http://tout.herokuapp.com'
+  # spec.metadata['changelog_uri']   = "Put your gem's CHANGELOG.md URL here."
 
-    spec.metadata['homepage_uri']    = 'http://tout.herokuapp.com'
-    spec.metadata['source_code_uri'] = 'http://rubygems.org/gems/zipcodes_usa'
-    # spec.metadata['changelog_uri']   = "Put your gem's CHANGELOG.md URL here."
-  else
-    raise 'RubyGems 2.0 or newer is required to protect against ' \
-      'public gem pushes.'
-  end
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
