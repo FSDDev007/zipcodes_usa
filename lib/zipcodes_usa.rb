@@ -9,33 +9,33 @@ module ZipcodesUsa
   # WorkerScrape Service
   class Error < StandardError; end
 
-  class Find < Query
-    def initialize(zipcode = nil, state: nil, city: nil)
-      @code  = zipcode
-      @state = state
-      @city  = city
-    end
+  class Data < Query
+    # def initialize(code = nil, state: nil, city: nil, coverage: nil)
+    #   @code  = code
+    #   @state = state
+    #   @city  = city
+    #   @coverage = coverage
+    # end
 
-    def details(code = nil)
-      code = @code if code.nil?
-      # zipcode_list = YAML.load_file('US.yml')
-      # zipcode_list = YAML.load_file('output.yaml')
-      zipcode_list = YAML.load_file('zipcode.yaml')
-      zipcode_list[code.to_i] rescue {}
-      puts zipcode_list[code.to_i]
+    # def details(code = nil)
+    #   code = @code if code.nil?
+    #   Query.find_details(code)
+    # end
 
-      zipcode_list.select { |x| x['state'] == 'AK' }
-    end
+    # def fetch_cities(city: nil)
+    #   city = @city if city.nil?
+    #   Query.select_city(city: city)
+    # end
 
-    def fetch_cities(city: nil)
-      city = @city if city.nil?
-      Query.select_city(city: city)
-    end
+    # def fetch_states(state: nil)
+    #   state = @state if state.nil?
+    #   Query.select_state(state: state)
+    # end
 
-    def fetch_states(state: nil)
-      state = @state if state.nil?
-      Query.select_state(state: state)
-    end
+    # def fetch_five_g_coverage(coverage: nil)
+    #   coverage = @coverage if coverage.nil?
+    #   Query.select_five_g_coverage(coverage)
+    # end
   end
 end
 
@@ -50,3 +50,4 @@ end
 # ZipcodesUsa::Find.new('12345').details
 # ZipcodesUsa::Find.new(city: 'Anchorage').fetch_cities
 # ZipcodesUsa::Find.new(state: 'AK').fetch_states
+# ZipcodesUsa::Find.new(coverage: 'false').fetch_five_g_coverage
