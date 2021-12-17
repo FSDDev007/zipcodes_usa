@@ -9,17 +9,18 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Varun Kothari']
   spec.email         = ['varun.kothari007@gmail.com']
 
-  spec.summary       = 'USA Zipcodes list'
-  spec.description   = 'USA Zipcodes list where 5G Coverage is available.'
-  spec.homepage      = 'http://tout.herokuapp.com'
+  spec.summary       = 'Find USA Zipcodes'
+  spec.description   = 'It provides the USA Zipcodes list in which you can easily search any USA zipcode by their code, city, and state name.'
+  # '5G Coverage is available.'
+  spec.homepage      = 'https://github.com/Throughout-Dev/zipcodes_usa'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  spec.metadata['homepage_uri']    = 'http://tout.herokuapp.com'
-  spec.metadata['source_code_uri'] = 'http://tout.herokuapp.com'
-  # spec.metadata['changelog_uri']   = "Put your gem's CHANGELOG.md URL here."
+  # spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+
+  spec.metadata['homepage_uri']    = 'https://github.com/Throughout-Dev/zipcodes_usa'
+  spec.metadata['source_code_uri'] = 'https://github.com/Throughout-Dev/zipcodes_usa'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
