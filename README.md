@@ -48,7 +48,7 @@ ZipcodesUsa::Data.cities(state: 'NY', postal_code: '12345')
 Bug reports and pull requests are welcome on GitHub at https://github.com/Throughout-Dev/zipcodes_usa#readme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Contact Us
-You can contact us or share your suggestions to us on our email.
+You can contact us or share your suggestions to us on our email._
 Send us email: [Hello@throughouttechnologies.com](Hello@throughouttechnologies.com)
 Follow us on linkedin: [throughouttechnologies.pvt.ltd](https://www.linkedin.com/company/throughouttechnologiespvt.ltd./?viewAsMember=true)
 
