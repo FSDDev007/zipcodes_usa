@@ -6,8 +6,8 @@ require 'zipcodes_usa/query'
 Gem::Specification.new do |spec|
   spec.name          = 'zipcodes_usa'
   spec.version       = ZipcodesUsa::VERSION
-  spec.authors       = ['Varun Kothari']
-  spec.email         = ['varun.kothari007@gmail.com']
+  spec.authors       = ['Throughout  Technologies']
+  spec.email         = ['throughout.dev.stack@gmail.com']
 
   spec.summary       = 'Find USA Zipcodes'
   spec.description   = 'It provides the USA Zipcodes list in which you can easily search any USA zipcode by their code, city, and state name.'
